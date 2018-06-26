@@ -146,7 +146,7 @@
 
 		&.major {
 			position: relative;
-			border-top: solid 5px #e7eae8;
+			border-top: solid 5px #32478b;
 			font-size: 1.65em;
 			text-align: center;
 			margin: 0 0 3em 0;
@@ -311,7 +311,6 @@
 			top: 0;
 			width: 100%;
 			height: 100%;
-			background: url('images/overlay.png');
 			border-radius: 8px;
 		}
 
@@ -881,7 +880,6 @@
 		left: 0;
 		z-index: 1000;
 		background-color: rgba(255, 255, 255, 0.95);
-		background-image: url('images/overlay.png');
 		width: 100%;
 		height: 3.25em;
 		line-height: 3.25em;
@@ -943,7 +941,7 @@
 			}
 
 			&.current a {
-				background: #b1ddab;
+				background: #32478b;
 				color: #fff;
 			}
 		}
@@ -1015,12 +1013,15 @@
 
 	#banner {
 		position: relative;
-		background-image: url('images/overlay.png'), url('images/overlay.png'), url('../../images/banner.jpg');
-		background-position: top left, top left, center center;
-		background-repeat: repeat, repeat, no-repeat;
-		background-size: auto, auto, cover;
+		background-image:url('../../images/header.png');
+		background-position:center center;
+		background-repeat:no-repeat;
+		background-size:cover;
 		z-index: 1;
 		padding: 11em 0;
+		height:calc(100vh - 3.25em);
+		display:flex;
+		align-items:center;
 
 		.content {
 			position: relative;
@@ -1032,6 +1033,8 @@
 			text-align: center;
 			margin: 0;
 			padding: 4em 0 3.5em 0;
+			width:100%;
+			height:350px;
 
 			h2 {
 				color: #fff;
@@ -1044,7 +1047,7 @@
 				font-family: 'Open Sans Condensed', sans-serif;
 				font-weight: 700;
 				text-transform: uppercase;
-				color: #575d59;
+				color: lightgrey;
 				font-size: 1.35em;
 				margin: 0 0 1.25em 0;
 			}
@@ -1055,7 +1058,7 @@
 				background: transparent !important;
 				border: solid 4px #575d59;
 				border-color: rgba(87, 93, 89, 0.35);
-				font-size: 1.5em;
+				padding: 0.85em 1.25em;
 
 				&:hover {
 					color: #e4e7e5;
@@ -1074,8 +1077,8 @@
 
 	#main {
 		background: #fff;
-		border-top: solid 5px #b1ddab;
-		border-bottom: solid 5px #c1cac5;
+		border-top: solid 5px #32478b;
+		border-bottom: solid 5px #32478b;
 		border-top-width: 35px;
 		border-bottom-width: 10px;
 		padding: 6em 0 6em 0;
@@ -1465,6 +1468,16 @@
 					}
 				}
 			}
+			#iconsContainer{
+				.col-3{
+					width: 33%;
+				}
+			}
+			.piechart{
+				.col-3{
+					width: 50%;
+				}
+			}
 
 	}
 
@@ -1631,6 +1644,17 @@
 					}
 				}
 			}
+			#iconsContainer{
+				.col-3{
+					width: 50%;
+				}
+			}
+
+			.piechart{
+				.col-3{
+					width: 50%;
+				}
+			}
 
 	}
 
@@ -1643,12 +1667,17 @@
 			body, input, textarea, select {
 				font-size: 10pt;
 			}
+			#iconsContainer{
+				.col-3{
+					width: 100%;
+				}
+			}
 
 	}
 
 	#iconsContainer{
 		.iconBackground{
-			background-color: lightgrey;
+			background-color: darkgray;
 		    border-radius: 122px;
 		    width: 150px;
 		    height: 150px;
@@ -1656,14 +1685,108 @@
 		    align-items: center;
 		    justify-content: center;
 		}
+		.row{
+			justify-content: center;
+		}
 		.col-3{
 			padding:0;
 			display: flex;
     		justify-content: center;
     		align-items: center;
+    		flex-wrap:wrap;
+    		transition: all 0.3s ease-in-out;
+    		cursor:pointer;
+    		&:hover{
+    			transform:scale(1.1);
+    			.iconBackground{
+    				background-color: #32478b;
+    			}
+    		}
 			img{
 				width:50%;
 				filter:invert(1);
 			}
+			p{
+				width:100%;
+				font-family: 'Open Sans Condensed', sans-serif;
+				margin-top:8px;
+				height:30px;
+			}
 		}
 	}
+	.baracek{
+		width:70% !important;
+		margin:0 auto !important;
+	}
+	.contact{
+		margin-top:50px;
+		p{
+			margin-bottom:1em;
+			color:#32478b;
+			font-weight:bold;
+		}
+	}
+	#more-arrows {
+	width: 75px;
+	height: 65px;
+	  
+	  &:hover {
+	    
+	    polygon {
+	      fill: #FFF;
+	      transition: all .2s ease-out;
+
+	      &.arrow-bottom {
+	        transform: translateY(-18px);
+	      }
+
+	      &.arrow-top {
+	        transform: translateY(18px);
+	      }
+	      
+	    }
+	  
+	  }
+	  
+	}
+
+	polygon {
+	  fill: #FFF;
+	  transition: all .2s ease-out;
+	    
+	  	&.arrow-middle {
+		  opacity: 0.75;
+		}
+		&.arrow-top {
+		  opacity: 0.5
+		}
+		 
+	}
+
+.piechart{
+	.col-12{
+		padding:0;
+		text-align:center;
+		p{
+			    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+		}
+	}
+	.percentHolder{
+		border: 2px solid darkgrey;
+	    display: flex;
+	    border-radius: 50px;
+	}
+	.percentFiller{
+	    background-color: #32478b;
+	    height: 36px;
+	    border-radius: 50px;
+	}
+	.percentText{
+		font-size: 18px;
+	    position: absolute;
+	    margin: 0 auto !important;
+	    color: white;
+	    padding-left: 10px;
+	}
+}

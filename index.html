@@ -6,10 +6,11 @@
 -->
 <html>
   <head>
-    <title>TXT by HTML5 UP</title>
+    <title>Nervo</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/simple-donut.css" />
   </head>
   <body class="homepage is-preload">
     <div id="page-wrapper">
@@ -18,7 +19,7 @@
         <header id="header">
           <div class="logo container">
             <div>
-              <h1><a href="index.html" id="logo">TXT</a></h1>
+              <h1><a href="index.html" id="logo">Nervo</a></h1>
               <p>A responsive site template by HTML5 UP</p>
             </div>
           </div>
@@ -28,19 +29,19 @@
         <nav id="nav">
           <ul>
             <li class="current"><a href="index.html">Domů</a></li>
-            <li><a href="left-sidebar.html">Specifikace</a></li>
+            <li><a href="specifikace.html">Specifikace</a></li>
             <li>
               <a href="#">Produkty</a>
               <ul>
-                <li><a href="#">TSP-NS 70S</a></li>
-                <li><a href="#">TSP-NS 60A</a></li>
-                <li><a href="#">TSP-SI 35</a></li>
-                <li><a href="#">TSP-SI 15</a></li>
+                <li><a href="TSP-NS-70S.html">TSP-NS 70S</a></li>
+                <li><a href="TSP-NS-60A.html">TSP-NS 60A</a></li>
+                <li><a href="TSP-SI-35.html">TSP-SI 35</a></li>
+                <li><a href="TSP-SI-15.html">TSP-SI 15</a></li>
               </ul>
             </li>
             <li><a href="right-sidebar.html">Ceník</a></li>
             <li><a href="no-sidebar.html">Katalog</a></li>
-            <li><a href="no-sidebar.html">Kontakt</a></li>
+            <li onclick="goContact()"><a style="cursor:pointer;">Kontakt</a></li>
           </ul>
         </nav>
 
@@ -49,7 +50,13 @@
           <div class="content">
             <h2>Termoizolační folie</h2>
             <p>Zažijete jedinečný komfort a ušetřete za energie po celý rok</p>
-            <a href="#main" class="button scrolly">Chcem ušetřit</a>
+            <a href="#main" class="button scrolly">
+              <svg id="more-arrows">
+                <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
+                <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+                <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
+              </svg>
+            </a>
           </div>
         </section>
 
@@ -63,46 +70,44 @@
                   <section class="box highlight">
                     <div id = "iconsContainer" class = "container">
                       <div class = "row">
-                        <div class = "col-3">
-                          <div class = "iconBackground">
-                            <img src="images/gripfire.svg">
-                          </div>
-                        </div>
-                        <div class = "col-3">
+                        <div class = "col-3" onclick="window.location='specifikace.html'">
                           <div class = "iconBackground">
                             <img src="images/snowflake.svg">
                           </div>
+                          <p>Chladno v létě</p>
                         </div>
-                        <div class = "col-3">
+                        <div class = "col-3" onclick="window.location='specifikace.html'">
                           <div class = "iconBackground">
-                            <img src="images/chess-board.svg">
+                            <img src="images/gripfire.svg">
                           </div>
+                          <p>Teplo v zimě</p>
                         </div>
-                        <div class = "col-3">
+                        <div class = "col-3" onclick="window.location='specifikace.html'">
+                          <div class = "iconBackground">
+                            <img src="images/gavel.svg">
+                          </div>
+                          <p>Bezpečnostní síť proti rozptýlení skla</p>
+                        </div>
+                        <div class = "col-3" onclick="window.location='specifikace.html'">
                           <div class = "iconBackground">
                             <img src="images/sun.svg">
                           </div>
+                          <p>Blokuje 99,9% škodlivého UV záření</p>
                         </div>
-                        <div class = "col-3">
+                        <div class = "col-3" onclick="window.location='specifikace.html'">
                           <div class = "iconBackground">
-                            <img src="images/glasses.svg">
+                            <img src="images/eye.svg">
                           </div>
+                          <p>Prakticky průhledná/neutrální vzhled</p>
                         </div>
-                        <div class = "col-3">
+                        <div class = "col-3" onclick="window.location='specifikace.html'">
                           <div class = "iconBackground">
                             <img src="images/tint.svg">
                           </div>
+                          <p>Minimalizace kondenzace</p>
                         </div>
                       </div>
                     </div>
-                    <header>
-                      <h2>A random assortment of icons in circles</h2>
-                      <p>And some text that attempts to explain their significance</p>
-                    </header>
-                    <p>
-                      Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper mod quis eget mi. Etiam eu<br />
-                      ante risus. Aliquam erat volutpat. Aliquam luctus et mattis lectus amet pulvinar. Nam nec turpis consequat.
-                    </p>
                   </section>
 
               </div>
@@ -110,18 +115,17 @@
 
                 <!-- Features -->
                   <section class="box features">
-                    <h2 class="major"><span>A Major Heading</span></h2>
+                    <h2 class="major"><span>Produkty</span></h2>
                     <div>
                       <div class="row">
                         <div class="col-3 col-6-medium col-12-small">
 
                           <!-- Feature -->
                             <section class="box feature">
-                              <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-                              <h3><a href="#">A Subheading</a></h3>
+                              <a href="TSP-NS-70S.html" class="image featured"><img src="images/TSP-NS_70S.png" alt="" /></a>
+                              <h3><a href="#">Premium TSP-NS 70S</a></h3>
                               <p>
-                                Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-                                lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
+                                Jedná se o prémiový model s nejlepšími izolačními vlastnostmi a vynikajícím odvodem tepla pro úsporu energie po celou sezónu.<br>Je prakticky průhledná a nezmění vzhled budovy
                               </p>
                             </section>
 
@@ -130,11 +134,10 @@
 
                           <!-- Feature -->
                             <section class="box feature">
-                              <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-                              <h3><a href="#">Another Subheading</a></h3>
+                              <a href="TSP-NS-60A.html" class="image featured"><img src="images/TSP-NS_60.png" alt="" /></a>
+                              <h3><a href="#">Smart TSP-NS 60A</a></h3>
                               <p>
-                                Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-                                lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
+                                Skvělé izolační vlastnosti.<br>Vysoká propustnost viditelného světla zajišťuje neutrální vzhled
                               </p>
                             </section>
 
@@ -143,11 +146,10 @@
 
                           <!-- Feature -->
                             <section class="box feature">
-                              <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-                              <h3><a href="#">And Another</a></h3>
+                              <a href="TSP-SI-35.html" class="image featured"><img src="images/TSP-SI_35.png" alt="" /></a>
+                              <h3><a href="#">Economy TSP-SI 35</a></h3>
                               <p>
-                                Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-                                lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
+                                Velice univerzální model, který lze aplikovat kdekoliv.<br>Nejvhodnejší pro podmínky mírného podnebného pásu (rovnoměrné střídaní zimy a léta)
                               </p>
                             </section>
 
@@ -156,20 +158,13 @@
 
                           <!-- Feature -->
                             <section class="box feature">
-                              <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-                              <h3><a href="#">And One More</a></h3>
+                              <a href="TSP-SI-15.html" class="image featured"><img src="images/TSP-SI_15.png" alt="" /></a>
+                              <h3><a href="#">Economy TSP-SI 15</a></h3>
                               <p>
-                                Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-                                lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
+                                Velmi účinně zabraňuje proniknutí slunečního záření.<br>Je nejméně průhledná.<br>Vhodná na místa, kde je intenzivní sluneční záření.
                               </p>
                             </section>
 
-                        </div>
-                        <div class="col-12">
-                          <ul class="actions">
-                            <li><a href="#" class="button large">Do Something</a></li>
-                            <li><a href="#" class="button alt large">Think About It</a></li>
-                          </ul>
                         </div>
                       </div>
                     </div>
@@ -189,21 +184,6 @@
             <div class="row gtr-200">
               <div class="col-12">
 
-                <!-- About -->
-                  <section>
-                    <h2 class="major"><span>What's this about?</span></h2>
-                    <p>
-                      This is <strong>TXT</strong>, yet another free responsive site template designed by
-                      <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net">HTML5 UP</a>. It's released under the
-                      <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for
-                      whatever you're working on (personal or commercial), just be sure to give us credit for the design.
-                      That's basically it :)
-                    </p>
-                  </section>
-
-              </div>
-              <div class="col-12">
-
                 <!-- Contact -->
                   <section>
                     <h2 class="major"><span>Get in touch</span></h2>
@@ -218,14 +198,27 @@
 
               </div>
             </div>
-
-            <!-- Copyright -->
-              <div id="copyright">
-                <ul class="menu">
-                  <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
+          </div>
+          <div class="container contact #contact">
+          <h2 class="major"><span>Kontakt</span></h2>
+            <div class="row">
+              <div class="col-4 col-12-small">
+                <p>NERVO s.r.o.</p>
+                <p>Skořepka 1058/8</p>
+                <p>Praha - Staré Město</p>
+                <p>110 00 Česká republika</p>
               </div>
-
+              <div class="col-4 col-12-small">
+                <p>IČ: 03771148</p>
+                <p>DIČ: CZ03771148</p>
+                <p>DATOVÁ SCHRÁNKA: 56xwm5n</p>
+              </div>
+              <div class="col-4 col-12-small">
+                <p>TEL: (+420) 602 33 66 55</p>
+                <p>E-MAIL: info@nervo.cz</p>
+                <p>WEB: www.nervo.cz</p>
+              </div>
+            </div>
           </div>
         </footer>
 
@@ -239,6 +232,7 @@
       <script src="assets/js/breakpoints.min.js"></script>
       <script src="assets/js/util.js"></script>
       <script src="assets/js/main.js"></script>
+      <script src="assets/js/simple-donut-jquery.js"></script>
 
   </body>
 </html>

@@ -3,12 +3,16 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+function goContact(){
+	$("html, body").animate({ scrollTop: document.body.scrollHeight }, 800);
+}
 
 (function($) {
 
 	var	$window = $(window),
 		$body = $('body'),
 		$nav = $('#nav');
+		$contact = $('#contact');
 
 	// Breakpoints.
 		breakpoints({
@@ -38,6 +42,11 @@
 		$('.scrolly').scrolly({
 			speed: 1000,
 			offset: function() { return $nav.height() - 5; }
+		});
+
+		$('.contactScroll').scrolly({
+			speed: 1000,
+			offset: function() { return contact.height() - 5; }
 		});
 
 	// Nav.
