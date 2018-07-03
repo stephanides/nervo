@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/simple-donut.css" />
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -75,20 +76,118 @@
 											</section>
 
 											<section>
+												
+												<div class="container piechart piechart70s">
 												<h3>Specifikace výkonu</h3>
-												<ul style="padding-left: 2em;"> 
-												  <li>rychlost vedení tepla 4,4 W/m2K</li>
-												  <li>koeficient stínění 0,47 SC</li>
-												  <li>modifikovaná emisivita E (i) 0,32</li>
-												  <li>propustnost solárních paprsků 31,5%</li>
-												  <li>viditelná propustnost světla 39,6%</li>
-												  <li>rychlost řezu UV 99,4%</li>
-												  <li>odrazivost slunce (venkovní) 31,6%</li>
-												  <li>odrazivost slunce (vnitřní) 37,7%</li>
-												  <li>odrazivost viditelného světla (vnitřní) 34,5%</li>
-												  <li>solárni poměr absoprce vody (venkovní) 35,9%</li>
-												  <li>celková míra blokování sluneční energie 61,1%</li>
-												</ul>
+												<div class="row">
+													<div class="col-6 col-12-medium">
+														<div class="col-12">
+															<div id="SI35PSP" class="donut-size">
+															  <div class="pie-wrapper">
+															    <span class="label">
+															      <span class="num">4,4</span><span class="smaller">W/m2k</span>
+															    </span>
+															    <div class="pie">
+															      <div class="left-side half-circle"></div>
+															      <div class="right-side half-circle"></div>
+															    </div>
+															    <div class="shadow"></div>
+															  </div>
+															</div>
+															<p>Rychlost vedení tepla</p>
+														</div>
+														<div class="col-12">
+															<div id="SI35VPS" class="donut-size">
+															  <div class="pie-wrapper">
+															    <span class="label">
+															      <span class="num">0,47</span><span class="smaller">SC</span>
+															    </span>
+															    <div class="pie">
+															      <div class="left-side half-circle"></div>
+															      <div class="right-side half-circle"></div>
+															    </div>
+															    <div class="shadow"></div>
+															  </div>
+															</div>
+															<p>Koeficient stínění</p>
+														</div>
+														<div class="col-12">
+															<div id="SI35RR" class="donut-size">
+															  <div class="pie-wrapper">
+															    <span class="label">
+															      <span class="num">0,47</span><span class="smaller"></span>
+															    </span>
+															    <div class="pie">
+															      <div class="left-side half-circle"></div>
+															      <div class="right-side half-circle"></div>
+															    </div>
+															    <div class="shadow"></div>
+															  </div>
+															</div>
+															<p>Modifikovaná emisivita E (i)</p>
+														</div>
+													</div>
+
+													<div class="col-6 col-12-medium">
+														<div class = "col-12">
+															<p>Propustnost solárních paprsků</p>
+															<div class="percentHolder">
+																<div class="percentFiller" style="width: 31%;"></div>
+																<p class="percentText">31,5 %</p>
+															</div>
+														</div>
+														<div class = "col-12">
+															<p>Odrazivost slunce (venkovní)</p>
+															<div class="percentHolder">
+																<div class="percentFiller" style="width: 31%;"></div>
+																<p class="percentText">31,6 %</p>
+															</div>
+														</div>
+														<div class = "col-12">
+															<p>Odrazivost viditelného světla (vnitřní)</p>
+															<div class="percentHolder">
+																<div class="percentFiller" style="width: 34%;"></div>
+																<p class="percentText">34,5 %</p>
+															</div>
+														</div>
+														<div class = "col-12">
+															<p>Solárni poměr absoprce vody (venkovní)</p>
+															<div class="percentHolder">
+																<div class="percentFiller" style="width: 35%;"></div>
+																<p class="percentText">35,9 %</p>
+															</div>
+														</div>
+														<div class = "col-12">
+															<p>Odrazivost slunce (vnitřní)</p>
+															<div class="percentHolder">
+																<div class="percentFiller" style="width: 37%;"></div>
+																<p class="percentText">37,7 %</p>
+															</div>
+														</div>
+														<div class = "col-12">
+															<p>Viditelná propustnost světla</p>
+															<div class="percentHolder">
+																<div class="percentFiller" style="width: 40%;"></div>
+																<p class="percentText">39,6 %</p>
+															</div>
+														</div>
+														<div class = "col-12">
+															<p>Celková míra blokování sluneční energie</p>
+															<div class="percentHolder">
+																<div class="percentFiller" style="width: 61%;"></div>
+																<p class="percentText">61,1 %</p>
+															</div>
+														</div>
+													    <div class = "col-12">
+															<p>Rychlost řezu UV</p>
+															<div class="percentHolder">
+																<div class="percentFiller" style="width: 99%;"></div>
+																<p class="percentText">99,4 %</p>
+															</div>
+														</div>
+													</div>
+												</div>	
+											</div>
 											</section>
 										</article>
 
@@ -212,6 +311,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/simple-donut-jquery.js"></script>
 
 	</body>
 </html>

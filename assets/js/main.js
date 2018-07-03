@@ -7,6 +7,17 @@ function goContact(){
 	$("html, body").animate({ scrollTop: document.body.scrollHeight }, 800);
 }
 
+var myVideo = document.getElementById("intro"); 
+
+function startVideo(){
+	myVideo.play();
+	console.log("play");
+}
+
+if(document.getElementById("intro") !== null){
+	startVideo();
+}
+
 (function($) {
 
 	var	$window = $(window),

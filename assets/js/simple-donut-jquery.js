@@ -6,32 +6,23 @@
  * @param  {boolean} donut   True shows donut, false shows pie
  */
 $(allInView);
-$(window).scroll(allInView);
 
-
-function isScrolledIntoView(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
-
-    var elemTop = $(elem).offset().top-600;
-    var elemBottom = elemTop + $(elem).height();
-
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-}
 
 function allInView() {
-    if (isScrolledIntoView($(".piechart70s"))){
-        setTimeout(function(){ 
-        updateDonutChart('#70SPSP', 42, true);
-        updateDonutChart('#70SVPS', 73, true);
-        updateDonutChart('#70SRR', 60, true);
-        updateDonutChart('#70SOSOUT', 36, true);
-        updateDonutChart('#70SOSIN', 42, true);
-        updateDonutChart('#70SOVS', 12, true);
-        updateDonutChart('#70SSPAV', 19, true);
-        updateDonutChart('#70SCMBSE', 53, true);
-         }, 100);
-    } 
+    setTimeout(function(){ 
+    updateDonutChart('#70SPSP', 53, true);
+    updateDonutChart('#70SVPS', 73, true);
+    updateDonutChart('#70SRR', 2, true);
+    updateDonutChart('#60APSP', 55, true);
+    updateDonutChart('#60AVPS', 68, true);
+    updateDonutChart('#60ARR', 3, true);
+    updateDonutChart('#SI35PSP', 65, true);
+    updateDonutChart('#SI35VPS', 68, true);
+    updateDonutChart('#SI35RR', 14, true);
+    updateDonutChart('#SI15PSP', 60, true);
+    updateDonutChart('#SI15VPS', 47, true);
+    updateDonutChart('#SI15RR', 8, true);
+     }, 300);
 }
 
 

@@ -354,7 +354,7 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		text-decoration: none;
-		background: #b1ddab;
+		background: #32478b;
 		color: #fff;
 		border: 0;
 		line-height: 1em;
@@ -1019,13 +1019,13 @@
 		background-size:cover;
 		z-index: 1;
 		padding: 11em 0;
-		height:calc(100vh - 3.25em);
+		height:100vh;
 		display:flex;
 		align-items:center;
 
 		.content {
 			position: relative;
-			background-color: rgba(21, 28, 23, 0.85);
+			background-color: rgba(21, 28, 23, 0.55);
 			background-image: url('images/overlay.png'), url('images/highlight.png');
 			background-position: top left, center center;
 			background-size: auto, 100% 250%;
@@ -1081,7 +1081,7 @@
 		border-bottom: solid 5px #32478b;
 		border-top-width: 35px;
 		border-bottom-width: 10px;
-		padding: 6em 0 6em 0;
+		padding: 10em 0 6em 0;
 	}
 
 /* Sidebar + Content */
@@ -1361,7 +1361,7 @@
 						position: absolute;
 						left: 0;
 						top: 0;
-						background: #b1ddab;
+						background: #32478b;
 						width: 44px;
 						height: 44px;
 						content: '\f0c9';
@@ -1615,7 +1615,7 @@
 		/* Main */
 
 			#main {
-				padding: 3em 0;
+				padding: 5em 0;
 			}
 
 		/* Sidebar */
@@ -1776,6 +1776,7 @@
 		border: 2px solid darkgrey;
 	    display: flex;
 	    border-radius: 50px;
+	    align-items: center;
 	}
 	.percentFiller{
 	    background-color: #32478b;
