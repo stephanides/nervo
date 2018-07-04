@@ -371,7 +371,7 @@
 		text-align: center;
 
 		&:hover {
-			background: #c1edbb;
+			background: #32478b;
 		}
 
 		&:active {
@@ -1789,5 +1789,19 @@
 	    margin: 0 auto !important;
 	    color: white;
 	    padding-left: 10px;
+	}
+}
+.calculation{
+	p{
+		margin-bottom: 0.1em;
+		text-align:left;
+		margin-left:0.5em;
+	}
+	h3{
+		font-size:1.5em;
+		color:#32478b;
+	}
+	input[type="submit"]{
+		margin-top:0.5em;
 	}
 }

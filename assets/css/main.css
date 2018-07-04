@@ -1013,7 +1013,7 @@ button,
   input[type="reset"]:hover,
   button:hover,
   .button:hover {
-    background: #c1edbb; }
+    background: #32478b; }
   input[type="button"]:active,
   input[type="submit"]:active,
   input[type="reset"]:active,
@@ -1990,5 +1990,15 @@ polygon {
   margin: 0 auto !important;
   color: white;
   padding-left: 10px; }
+
+.calculation p {
+  margin-bottom: 0.1em;
+  text-align: left;
+  margin-left: 0.5em; }
+.calculation h3 {
+  font-size: 1.5em;
+  color: #32478b; }
+.calculation input[type="submit"] {
+  margin-top: 0.5em; }
 
 /*# sourceMappingURL=main.css.map */
