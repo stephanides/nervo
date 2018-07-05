@@ -102,7 +102,7 @@ h2 {
   font-size: 1.65em; }
   h2.major {
     position: relative;
-    border-top: solid 5px #32478b;
+    border-top: solid 2px #32478b;
     font-size: 1.65em;
     text-align: center;
     margin: 0 0 3em 0;
@@ -1908,6 +1908,9 @@ body {
 
   #iconsContainer .col-3 {
     width: 100%; } }
+.contactfooter .footerIcon {
+  width: 80%; }
+
 #iconsContainer .iconBackground {
   background-color: darkgray;
   border-radius: 122px;
@@ -1997,8 +2000,45 @@ polygon {
   margin-left: 0.5em; }
 .calculation h3 {
   font-size: 1.5em;
-  color: #32478b; }
+  color: #32478b;
+  margin-right: 10px; }
 .calculation input[type="submit"] {
   margin-top: 0.5em; }
+.calculation .iconBackground {
+  background-color: #32478b;
+  border-radius: 122px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+.calculation img {
+  width: 50%;
+  filter: invert(1); }
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contacts p {
+    color: white;
+    margin-bottom: 0; }
+
+.contactfooter img {
+  width: 10%;
+  filter: invert(1); }
+.contactfooter .footerIcon {
+  background-color: #32478b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  margin-top: 10px;
+  border-radius: 10px;
+  margin-left: 1%;
+  width: 50%; }
 
 /*# sourceMappingURL=main.css.map */
