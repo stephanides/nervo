@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -25,23 +26,26 @@
 
 			<!-- Nav -->
 				<nav id="nav">
-					<ul>
-						<li><a href="index.html">Domů</a></li>
-						<li class="current"><a href="specifikace.html">Specifikace</a></li>
-						<li>
-			              <a href="#">Produkty</a>
-			              <ul>
-			                <li><a href="TSP-NS-70S.html">TSP-NS 70S</a></li>
-			                <li><a href="TSP-NS-60A.html">TSP-NS 60A</a></li>
-			                <li><a href="TSP-SI-35.html">TSP-SI 35</a></li>
-			                <li><a href="TSP-SI-15.html">TSP-SI 15</a></li>
-			              </ul>
-			            </li>
-						<li><a href="right-sidebar.html">Ceník</a></li>
-			            <li><a href="no-sidebar.html">Katalog</a></li>
-			            <li onclick="goContact()"><a style="cursor:pointer;">Kontakt</a></li>
-					</ul>
-				</nav>
+		          <div class="logo">
+		            <img src="images/nervo_logo_blue.png">
+		          </div>
+		          <ul>
+		            <li class="homeButton"><a href="index.html">Domů</a></li>
+		            <li class="current specificationButton"><a href="specifikace.html">Specifikace</a></li>
+		            <li class="productsButton">
+		              <a href="#">Produkty</a>
+		              <ul>
+		                <li><a href="TSP-NS-70S.html">TSP-NS 70S</a></li>
+		                <li><a href="TSP-NS-60A.html">TSP-NS 60A</a></li>
+		                <li><a href="TSP-SI-35.html">TSP-SI 35</a></li>
+		                <li><a href="TSP-SI-15.html">TSP-SI 15</a></li>
+		              </ul>
+		            </li>
+		            <li class="priceButton"><a href="right-sidebar.html">Ceník</a></li>
+		            <li class="catalogButton"><a href="no-sidebar.html">Katalog</a></li>
+		            <li class="contactButton"><a style="cursor:pointer;"href="kontakt.html">Kontakt</a></li>
+		          </ul>
+		        </nav>
 
 			<!-- Main -->
 				<section id="main">
@@ -115,7 +119,117 @@
 												</div>
 												<span class="image featured baracek"><img src="images/baracek.png" alt="" /></span>
 												<h3 style="text-align: center; padding-top: 20px;">Tabulková specifikace</h3>
-												<span class="image featured baracek"><img src="images/tabulka.png" alt="" /></span>
+												<!--<span class="image featured baracek"><img src="images/tabulka.png" alt="" /></span>-->
+												<table id = "specification">
+													<tr>
+														<th>Vlastnost</th>
+														<th>TSP-SI15</th>
+														<th>TSP-SI35</th>
+														<th>TSP-NS60A</th>
+														<th>TSP-NS70S</th>
+														<th>Symbol</th>
+														<th>Jednotka</th>
+													</tr>
+													<tr>
+														<td>Solárni propustnost</td>
+														<td>16.8</td>
+														<td>32.0</td>
+														<td>43.7</td>
+														<td>46.3</td>
+														<td>TE</td>
+														<td>%</td>
+													</tr>
+													<tr>
+														<td>Propustnost viditelného světla</td>
+														<td>21.5</td>
+														<td>39.6</td>
+														<td>62.8</td>
+														<td>75.1</td>
+														<td>TL</td>
+														<td>%</td>
+													</tr>
+													<tr>
+														<td>UV Propustnost</td>
+														<td>0.2</td>
+														<td>0.6</td>
+														<td>0.2</td>
+														<td>0.1</td>
+														<td>TUV</td>
+														<td>%</td>
+													</tr>
+													<tr>
+														<td>Solární odrazivost (vnější)</td>
+														<td>49.0</td>
+														<td>30.9</td>
+														<td>35.5</td>
+														<td>32.6</td>
+														<td>RE(e)</td>
+														<td>%</td>
+													</tr>
+													<tr>
+														<td>Solární odrazivost (vnitřní)</td>
+														<td>58.4</td>
+														<td>37.0</td>
+														<td>41.4</td>
+														<td>37.3</td>
+														<td>RE(i)</td>
+														<td>%</td>
+													</tr>
+													<tr>
+														<td>Odrazivost viditelného světla (vnější)</td>
+														<td>53.0</td>
+														<td>32.5</td>
+														<td>26.7</td>
+														<td>14.0</td>
+														<td>RL(e)</td>
+														<td>%</td>
+													</tr>
+													<tr>
+														<td>Odrazivost viditelného světla (vnitřní)</td>
+														<td>56.4</td>
+														<td>35.3</td>
+														<td>27.4</td>
+														<td>11.1</td>
+														<td>RL(i)</td>
+														<td>%</td>
+													</tr>
+													<tr>
+														<td>Solární absiroce (vnější)</td>
+														<td>34.2</td>
+														<td>37.2</td>
+														<td>20.8</td>
+														<td>21.1</td>
+														<td>AE(e)</td>
+														<td>%</td>
+													</tr>
+													<tr>
+														<td>Stínící koeficient</td>
+														<td>0.28</td>
+														<td>0.47</td>
+														<td>0.56</td>
+														<td>0.59</td>
+														<td>SC</td>
+														<td>-</td>
+													</tr>
+													<tr>
+														<td>Koeficient propustnosti tepla (zima)</td>
+														<td>4.1</td>
+														<td>4.4</td>
+														<td>3.9</td>
+														<td>3.6</td>
+														<td>U-value</td>
+														<td>W/m2-K</td>
+													</tr>
+													<tr>
+														<td>Celková solární nepropustnost</td>
+														<td>77.4</td>
+														<td>61.1</td>
+														<td>53.1</td>
+														<td>50.6</td>
+														<td>TSER</td>
+														<td>%</td>
+													</tr>
+												</table>
 											</section>
 
 										</article>
@@ -205,78 +319,39 @@
             </div>
           </div>
           <div class="container contact #contact">
-          <h2 class="major"><span>Kontakt</span></h2>
+            <h2 class="major"><span>Kontakt</span></h2>
             <div class="row">
-              <div class="col-6 col-12-medium calculation">
-                <div class="row">
-                  <div class="col-4 col-12-small" style="display: flex;align-items: center;justify-content: center;flex-wrap: wrap;">
-                    <h3>Kalkulace zdarma</h3>
-                    <div class = "iconBackground">
-                      <img src="images/envelope.svg">
+                <div class="col-12 cardHolder">
+                  <div class="row " style="justify-content: space-between;">
+                    <div class="col-4 col-12-small card">
+                      <p>NERVO s.r.o.</p>
+                      <p>Skořepka 1058/8</p>
+                      <p>Praha - Staré Město</p>
+                      <p>110 00 Česká republika</p>
                     </div>
-                  </div>
-                  <div class="col-8 col-12-small">
-                    <form>
-                    <p>JMÉNO A PŘÍJMENÍ:</p>
-                    <input name="namesurname" type="text">
-                    <p>E-MAIL:</p>
-                    <input name="email" type="text">
-                    <input type="submit" value="Odoslat">
-                  </form>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-12-medium contactfooter">
-                <div class="row">
-                  <div class="col-6">
-                    <p>NERVO s.r.o.</p>
-                    <p>Skořepka 1058/8</p>
-                    <p>Praha - Staré Město</p>
-                    <p>110 00 Česká republika</p>
-                  </div>
-                  <div class="col-6">
-                    <p>IČ: 03771148</p>
-                    <p>DIČ: CZ03771148</p>
-                    <p>DATOVÁ SCHRÁNKA: 56xwm5n</p>
-                    
-                  </div>
-                  <div class="col-12 ">
-                    <div class="row contacts">
-                      <div class="footerIcon col-12">
+                    <div class="col-4 col-12-small card">
+                      <p>IČ: 03771148</p>
+                      <p>DIČ: CZ03771148</p>
+                      <p>DATOVÁ SCHRÁNKA: 56xwm5n</p>
+                    </div>
+                    <div class="col-4 col-12-small card" style="padding-top: 30px;padding-bottom: 20px;">
+                      <div>
                         <img src="images/phone.svg">
                         <p>TEL: (+420) 602 33 66 55</p>
                       </div>
-                      <div class="footerIcon col-12">
+                      <div>
                         <img src="images/envelope.svg">
                         <p>E-MAIL: info@nervo.cz</p>
                       </div>
-                      <div class="footerIcon col-12">
+                      <div>
                         <img src="images/computer.svg">
                         <p>WEB: www.nervo.cz</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                
               </div>
-              <!--<div class="col-4 col-12-small">
-                <p>NERVO s.r.o.</p>
-                <p>Skořepka 1058/8</p>
-                <p>Praha - Staré Město</p>
-                <p>110 00 Česká republika</p>
-              </div>
-              <div class="col-4 col-12-small">
-                <p>IČ: 03771148</p>
-                <p>DIČ: CZ03771148</p>
-                <p>DATOVÁ SCHRÁNKA: 56xwm5n</p>
-              </div>
-              <div class="col-4 col-12-small">
-                <p>TEL: (+420) 602 33 66 55</p>
-                <p>E-MAIL: info@nervo.cz</p>
-                <p>WEB: www.nervo.cz</p>
-              </div>-->
             </div>
-          </div>
         </footer>
 
 		</div>

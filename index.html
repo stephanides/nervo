@@ -20,17 +20,19 @@
           <div class="logo container">
             <div>
               <h1><a href="index.html" id="logo">Nervo</a></h1>
-              <p>A responsive site template by HTML5 UP</p>
             </div>
           </div>
         </header>
 
       <!-- Nav -->
         <nav id="nav">
+          <div class="logo">
+            <img src="images/nervo_logo_blue.png">
+          </div>
           <ul>
             <li class="current"><a href="index.html">Domů</a></li>
-            <li><a href="specifikace.html">Specifikace</a></li>
-            <li>
+            <li class="specificationButton"><a href="specifikace.html">Specifikace</a></li>
+            <li class="productsButton">
               <a href="#">Produkty</a>
               <ul>
                 <li><a href="TSP-NS-70S.html">TSP-NS 70S</a></li>
@@ -39,9 +41,9 @@
                 <li><a href="TSP-SI-15.html">TSP-SI 15</a></li>
               </ul>
             </li>
-            <li><a href="right-sidebar.html">Ceník</a></li>
-            <li><a href="no-sidebar.html">Katalog</a></li>
-            <li onclick="goContact()"><a style="cursor:pointer;">Kontakt</a></li>
+            <li class="priceButton"><a href="right-sidebar.html">Ceník</a></li>
+            <li class="catalogButton"><a href="no-sidebar.html">Katalog</a></li>
+            <li class="contactButton"><a style="cursor:pointer;"href="kontakt.html">Kontakt</a></li>
           </ul>
         </nav>
 
@@ -65,7 +67,7 @@
 
       <!-- Main -->
         <section id="main">
-          <div class="container">
+          <div class="container" style="margin-top:20px;">
             <div class="row gtr-200">
               <div class="col-12">
 
@@ -201,76 +203,38 @@
             </div>
           </div>
           <div class="container contact #contact">
-          <h2 class="major"><span>Kontakt</span></h2>
+            <h2 class="major"><span>Kontakt</span></h2>
             <div class="row">
-              <div class="col-6 col-12-medium calculation">
-                <div class="row">
-                  <div class="col-4 col-12-small" style="display: flex;align-items: center;justify-content: center;flex-wrap: wrap;">
-                    <h3>Kalkulace zdarma</h3>
-                    <div class = "iconBackground">
-                      <img src="images/envelope.svg">
+                <div class="col-12 cardHolder">
+                  <div class="row " style="justify-content: space-between;">
+                    <div class="col-4 col-12-small card">
+                      <p>NERVO s.r.o.</p>
+                      <p>Skořepka 1058/8</p>
+                      <p>Praha - Staré Město</p>
+                      <p>110 00 Česká republika</p>
                     </div>
-                  </div>
-                  <div class="col-8 col-12-small">
-                    <form>
-                    <p>JMÉNO A PŘÍJMENÍ:</p>
-                    <input name="namesurname" type="text">
-                    <p>E-MAIL:</p>
-                    <input name="email" type="text">
-                    <input type="submit" value="Odoslat">
-                  </form>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-12-medium contactfooter">
-                <div class="row">
-                  <div class="col-6">
-                    <p>NERVO s.r.o.</p>
-                    <p>Skořepka 1058/8</p>
-                    <p>Praha - Staré Město</p>
-                    <p>110 00 Česká republika</p>
-                  </div>
-                  <div class="col-6">
-                    <p>IČ: 03771148</p>
-                    <p>DIČ: CZ03771148</p>
-                    <p>DATOVÁ SCHRÁNKA: 56xwm5n</p>
-                    
-                  </div>
-                  <div class="col-12 ">
-                    <div class="row contacts">
-                      <div class="footerIcon col-12">
+                    <div class="col-4 col-12-small card">
+                      <p>IČ: 03771148</p>
+                      <p>DIČ: CZ03771148</p>
+                      <p>DATOVÁ SCHRÁNKA: 56xwm5n</p>
+                    </div>
+                    <div class="col-4 col-12-small card" style="padding-top: 30px;padding-bottom: 20px;">
+                      <div>
                         <img src="images/phone.svg">
                         <p>TEL: (+420) 602 33 66 55</p>
                       </div>
-                      <div class="footerIcon col-12">
+                      <div>
                         <img src="images/envelope.svg">
                         <p>E-MAIL: info@nervo.cz</p>
                       </div>
-                      <div class="footerIcon col-12">
+                      <div>
                         <img src="images/computer.svg">
                         <p>WEB: www.nervo.cz</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                
               </div>
-              <!--<div class="col-4 col-12-small">
-                <p>NERVO s.r.o.</p>
-                <p>Skořepka 1058/8</p>
-                <p>Praha - Staré Město</p>
-                <p>110 00 Česká republika</p>
-              </div>
-              <div class="col-4 col-12-small">
-                <p>IČ: 03771148</p>
-                <p>DIČ: CZ03771148</p>
-                <p>DATOVÁ SCHRÁNKA: 56xwm5n</p>
-              </div>
-              <div class="col-4 col-12-small">
-                <p>TEL: (+420) 602 33 66 55</p>
-                <p>E-MAIL: info@nervo.cz</p>
-                <p>WEB: www.nervo.cz</p>
-              </div>-->
             </div>
           </div>
         </footer>
